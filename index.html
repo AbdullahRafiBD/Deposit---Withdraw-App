@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=npm install -D tailwindcss postcss autoprefixer vite, initial-scale=1.0">
+    <title>Deposit & Withdraw App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+
+    <main>
+        <div class="flex items-stretch bg-grey-lighter min-h-screen">
+            <div class="flex-1 bg-[#FEFEFE] text-grey-darker text-center bg-grey-light grid place-items-center">
+                <div class="card bg-[#fff] shadow-xl grid place-items-center w-[75%]">
+                    <!-- <figure class="px-5 py-5 ">
+                        <img id="img" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=Example"
+                            alt="Not Found" class="" />
+                    </figure> -->
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+
+
+            <div class="flex-1 bg-[#605dbaa8] text-grey-darker text-center bg-grey-light grid place-items-center">
+                <div class="card w-[89%] h-[70%] bg-base-100 shadow-xl">
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[36px]">Deposit, Withdraw Generator!</h2>
+
+                        <div class="flex flex-wrap -mx-3 mb-6 mt-10">
+                            <div class="form-control w-full px-3">
+                                <div class="bg-[#36A2EB] w-[100%] py-5 shadow-xl card">
+                                    <h2 class="label-text font-[700] text-[18px] text-[#fff]">Total</h2>
+                                    <h2 id="totalDisplay" class="label-text font-[700] text-[18px] text-[#fff]">0$</h2>
+                                </div>
+                                <label class="label">
+                                </label>
+                            </div>
+
+
+                            <div class="form-control w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <div class="bg-[#FF6384] w-[100%] py-5 shadow-xl card">
+                                    <h2 class="label-text font-[700] text-[18px] text-[#fff]">Deposit</h2>
+                                    <h2 id="displayDeposit" class="label-text font-[700] text-[18px] text-[#fff]">0$</h2>
+                                </div>
+                                <label class="label">
+                                </label>
+                                <input id="userDepositAmount" type="number" min="0" placeholder="Deposit here"
+                                    class="input input-bordered w-full max-w-xs" />
+                                    <div class="card-actions label">
+                                        <button id="depositBtn" class="btn btn-primary w-[100%]">Deposit Now</button>
+                                    </div>
+                            </div>
+                            <div class="form-control w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <div class="bg-[#FF9F40] w-[100%] py-5 shadow-xl card">
+                                    <h2 class="label-text font-[700] text-[18px] text-[#fff]">Withdraw</h2>
+                                    <h2 id="displayWithdraw" class="label-text font-[700] text-[18px] text-[#fff]">0$</h2>
+                                </div>
+                                <label class="label">
+                                </label>
+                                <input id="userWithdrawAmount" type="number" min="0" placeholder="Withdraw here"
+                                    class="input input-bordered w-full max-w-xs" />
+                                    <div class="card-actions label">
+                                        <button id="withdrawBtn" class="btn btn-primary w-[100%]">Withdraw Now</button>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div> -->
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/chart.js"></script>
+</body>
+
+</html>
